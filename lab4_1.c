@@ -13,7 +13,7 @@ double funkcja(double x)
 
 double MetodaTrapezow(int a, int b, int n) {
 	double calka = 0;
-    double h = (double)(b - a) / n; //przedzia³ <a,b> podzielony na n równych czêœci (h = odlegloœæ miêdzy xi a xi+1)
+    double h = (double)(b - a) / n; //przedziaÅ‚ <a,b> podzielony na n rÃ³wnych czÄ™Å›ci (h = odlegloÅ›Ä‡ miÄ™dzy xi a xi+1)
     
 	int i;
     for(i = 0; i < n; i++) {
@@ -33,8 +33,8 @@ double Kwadratura(int a, int b, int n) {
 		n++;
 	}
 	
-    h = (double)(b - a) / 2; //pierwszy wspó³czynnik
-    h2 = (double)(b + a) / 2;//drugi wspó³czynnik
+    h = (double)(b - a) / 2; //pierwszy wspÃ³Å‚czynnik
+    h2 = (double)(b + a) / 2;//drugi wspÃ³Å‚czynnik
 	
 	switch(n) { //wagi
 		case 2: {
@@ -67,7 +67,7 @@ double Kwadratura(int a, int b, int n) {
 	}
 		
     for(i = 0; i < n; i++) {
-        t = tab[i][1]; //wêz³y
+        t = tab[i][1]; //wÄ™zÅ‚y
         calka += tab[i][0] * funkcja(h * t + h2);
     }
 
